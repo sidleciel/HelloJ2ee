@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>WebDemo</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<listener>
+		<!-- 静态配置文件，整个项目的入口 -->
+		<listener-class>com.sc.utils.ListenerLoadConfig</listener-class>
+	</listener>
+	<servlet>
+		<!-- 别名 最终客户端访问的接口的名称后缀 -->
+		<servlet-name>Test</servlet-name>
+		<!-- 接口的具体类名，路径必须正确 -->
+		<servlet-class>com.sc.servlets.Test</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<!--别名统一--><servlet-name>Test</servlet-name>
+		<url-pattern>/Test</url-pattern>
+	</servlet-mapping>
+</web-app>
