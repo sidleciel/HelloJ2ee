@@ -16,14 +16,38 @@
 		<!-- 静态配置文件，整个项目的入口 -->
 		<listener-class>com.sc.utils.ListenerLoadConfig</listener-class>
 	</listener>
+
+	<filter>
+		<filter-name>LogFilter</filter-name>
+		<filter-class>com.sc.filter.LogFilter</filter-class>
+		<init-param>
+			<param-name>Site</param-name>
+			<param-value>菜鸟教程</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>LogFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
 	<servlet>
 		<!-- 别名 最终客户端访问的接口的名称后缀 -->
 		<servlet-name>Test</servlet-name>
 		<!-- 接口的具体类名，路径必须正确 -->
 		<servlet-class>com.sc.servlets.Test</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>DisplayHeader</servlet-name>
+		<servlet-class>com.sc.servlets.DisplayHeader</servlet-class>
+	</servlet>
+	
 	<servlet-mapping>
-		<!--别名统一--><servlet-name>Test</servlet-name>
-		<url-pattern>/Test</url-pattern>
+		<!--别名统一 -->
+		<servlet-name>Test</servlet-name>
+		<url-pattern>/test</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DisplayHeader</servlet-name>
+		<url-pattern>/displayheader</url-pattern>
 	</servlet-mapping>
 </web-app>
