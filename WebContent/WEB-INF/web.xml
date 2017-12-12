@@ -12,6 +12,11 @@
 		<welcome-file>default.htm</welcome-file>
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
+
+	<session-config>
+		<session-timeout>10</session-timeout>
+	</session-config>
+
 	<listener>
 		<!-- 静态配置文件，整个项目的入口 -->
 		<listener-class>com.sc.utils.ListenerLoadConfig</listener-class>
@@ -40,7 +45,12 @@
 		<servlet-name>DisplayHeader</servlet-name>
 		<servlet-class>com.sc.servlets.DisplayHeader</servlet-class>
 	</servlet>
-	
+	<servlet>
+		<display-name>UploadServlet</display-name>
+		<servlet-name>UploadServlet</servlet-name>
+		<servlet-class>com.sc.servlets.UploadServlet</servlet-class>
+	</servlet>
+
 	<servlet-mapping>
 		<!--别名统一 -->
 		<servlet-name>Test</servlet-name>
@@ -49,5 +59,9 @@
 	<servlet-mapping>
 		<servlet-name>DisplayHeader</servlet-name>
 		<url-pattern>/displayheader</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UploadServlet</servlet-name>
+		<url-pattern>/uploadservlet</url-pattern>
 	</servlet-mapping>
 </web-app>
