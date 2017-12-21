@@ -15,7 +15,7 @@
 
 	<jsp-config>
 		<taglib>
-<!-- 		格式化标签 -->
+			<!-- 格式化标签 -->
 			<taglib-uri>http://java.sun.com/jstl/fmt</taglib-uri>
 			<taglib-location>/WEB-INF/fmt.tld</taglib-location>
 		</taglib>
@@ -33,6 +33,7 @@
 			<taglib-location>/WEB-INF/c-rt.tld</taglib-location>
 		</taglib>
 		<taglib>
+			<!-- SQL标签 -->
 			<taglib-uri>http://java.sun.com/jstl/sql</taglib-uri>
 			<taglib-location>/WEB-INF/sql.tld</taglib-location>
 		</taglib>
@@ -41,6 +42,7 @@
 			<taglib-location>/WEB-INF/sql-rt.tld</taglib-location>
 		</taglib>
 		<taglib>
+			<!-- XML 标签 -->
 			<taglib-uri>http://java.sun.com/jstl/x</taglib-uri>
 			<taglib-location>/WEB-INF/x.tld</taglib-location>
 		</taglib>

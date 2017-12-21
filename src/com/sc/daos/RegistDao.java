@@ -12,7 +12,7 @@ public class RegistDao extends DBUtil {
 		int rowCount = 0;
 		try {
 			connection = getConn();
-			String sql = "insert into t_user(username, password) value(?,?)";
+			String sql = "REPLACE INTO t_user(username,`password`) value(?, ?)";
 			statement = connection.prepareStatement(sql);
 
 			statement.setString(1, user);
