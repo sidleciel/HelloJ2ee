@@ -9,6 +9,11 @@
 	<tag>
 		<name>Hello</name>
 		<tag-class>com.sc.tag.HelloTag</tag-class>
-		<body-content>empty</body-content>
+		<!-- <body-content>empty</body-content> -->
+		<body-content>scriptless</body-content>
+
+		<attribute>
+			<name>message</name>
+		</attribute>
 	</tag>
 </taglib>

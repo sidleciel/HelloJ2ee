@@ -2,6 +2,7 @@ eclipse.preferences.version=1
 encoding//WebContent/client_request.jsp=UTF-8
 encoding//WebContent/hello.jsp=UTF-8
 encoding//WebContent/http_status_codes.jsp=UTF-8
+encoding//WebContent/internationalization.jsp=UTF-8
 encoding//WebContent/main.jsp=UTF-8
 encoding//WebContent/server_response.jsp=UTF-8
 encoding//WebContent/test.jsp=UTF-8

@@ -8,6 +8,9 @@
 <title>A sample custom tag</title>
 </head>
 <body>
-	<ex:Hello />
+	<ex:Hello message="This is custom tag" >
+	This is message body
+	</ex:Hello>
+	
 </body>
 </html>
